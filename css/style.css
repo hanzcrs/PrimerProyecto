@@ -1,0 +1,12 @@
+/*voy a esta https://fonts.google.com/specimen/Poppins
+*/
+
+/*selecciono el estilo de letra para la pagina, seleccione Source Sans Pro 300-400-600 y 700*/
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap');
+
+/* se va a importar y en la pagina se copia el link directo en este archivo  que mas arriba se señala*/
+
+/* para el body tambien en la misma pagina figurara el font para aplicar*/
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+}
