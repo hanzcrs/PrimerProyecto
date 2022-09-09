@@ -14,37 +14,274 @@
     <!-- para este proyecto se debe instalar beeautify y vscode-icons-->
 
     <header class="hero">
-        <nav>
+        <nav class="nav container">
             <div class="nav__logo">
-                <h2 class="nav__title">Primer Proyecto CSS</h2>
+                <h2 class="nav__title">Mi Primer Proyecto CSS</h2>
             </div>
-            <ul class="navv_link nav__link--menu">
+
+            <ul class="nav__link nav__link--menu">
             <li class="nav__items">
-                    <a href="#" class="nav__links"> inicio</a>
+                    <a href="#" class="nav__links"> INICIO</a>
             </li>
                 <li class="nav__items">
-                    <a href="#" class="nav__links"> acerca de..</a>
+                    <a href="#" class="nav__links"> ACERCA DE...</a>
             </li>
             <li class="nav__items">
-                <a href="#" class="nav__links"> contacto</a>
+                <a href="#" class="nav__links"> CONTACTO</a>
             </li>
             <li class="nav__items">
-                <a href="#" class="nav__links"> blog</a>
+                <a href="#" class="nav__links">BLOG</a>
             </li>
-            <img src="./images/close.svg" class="nav__img">
+
+            <img src="./images/close.svg" class="nav__close">
             </ul>
-            <div class="nav_menu">
+
+            <div class="nav__menu">
                 <img src="./images/menu.svg" class="nav__img">
             </div>
         </nav>
+
         <section class="hero__container container">
             <h1 class="hero__title">Pagina para comprender CSS3 desde 0 hasta comprenderlo</h1>
-            <p class="hero__paragraph"> Se crea esta pagina para que de una vez se comprenda css3, ideal      paraaplicarlo a nuevas paginas con el tiempo en este curso.
-            </p>
+            <p class="hero__paragraph"> Se crea esta pagina para que de una vez se comprenda css3, ideal      paraaplicarlo a nuevas paginas con el tiempo en este curso.</p>
                 <a href="#" class="cta">Comienza Ahora</a>
         </section>
     </header>
+
+    <!--creamos el main para ubicarnos que sera dentro de la pagina principal-->
+    <main>
+    <section class="container about">
+            <h2 class="subtitule"> ¿Que se aplicara en este curso?</h2>
+            <p class="about__paragraph">Se aplicara todo en CS, (Flexbox, Grid, Custom. properties, Position Animaciones, Box Model, entre otros)</p>
+        <div class="about__main">
+            <article class="about__icons"> 
+                <img src="./images/shapes.svg" class="about__icon">
+                <h3 class="about__title">CSS Lyouts</h3>
+                <p class="about__paragrah">Un modo de diseño CSS(CSS layout mode), a veces simplemente llamado "layout", es un algoritmo que determina la posición y tamaño de cajas basado en la forma en la que interactúan con sus (elementos) hermanos y padres. </p>
+            </article>
+            <article class="about__icons"> 
+                <img src="./images/paint.svg" class="about__icon">
+                <h3 class="about__title">Animaciones</h3>
+                <p class="about__paragrah">aplicar animaciones en tus paginas web</p>
+            </article>
+            <article class="about__icons"> 
+                <img src="./images/code.svg" class="about__icon">
+                <h3 class="about__title">SASS</h3>
+                <p class="about__paragrah">Sass es un procesador CSS. Un preprocesador CSS es una herramienta que nos permite generar, de manera automática, hojas de estilo, añadiéndoles características que no tiene CSS, y que son propias de los lenguajes de programación, como pueden ser variables, funciones, selectores anidados, herencia, etcétera.</p>
+            </article>      
+        </div>   
+    </section>
+    <section class="knowledge">
+        <div class="knowledge__container container"> 
+            <div class="knowledge__texts">
+                <h2 class="subtitle">Curso completo de CSS3 DOMINAR DE UNA VEZ POR TODAS</h2>
+                <p class="knowledge__paragraph">Crear aplicaciones Web de Cero a Experto, utilizando HTML con las últimas versiones al día de hoy!
+                    Aprenderán desde cero HTML con el objetivo de crear increíbles aplicaciones Web
+                    HTML es la base para la creación de aplicaciones Web, por lo que se requiere para entender muchas otras tecnologías, este curso es la base para muchos cursos!
+                    Crearemos múltiples aplicaciones Web para poner en práctica todos los temas estudiados en el curso!
+                    No se requiere ningún conocimiento previo, empezaremos desde cero!</p>
+                <a href="#" class="cta"> ENTRAR AL CURSO YA!!! </a>
+            </div>
+            <figure>
+                <img src="./images/notebook.png" class="knowledge__img">
+            </figure>
+
+        </div>
+    </section>
+
+    <section class="price container">
+        <h2 class="subtitle">Obten el plan perfecto para aprender</h2>
+
+        <div class="price__table">
+            <div class= "price__element"> 
+                <p class="price__name"> Flexbox</p>
+                    <h3 class="price__price">Gratis!</h3>
+                <div class="price__items">
+                    <p class="price__features">Flexbox</p>
+                    <p class="price__features">layouts</p>
+                    <p class="price__features">Responsive</p>
+                </div>
+                <a href="#" class="price__cta"> Empieza Ahora</a>
+            </div>
+
+            <div class= "price__element price__element--best"> 
+                <p class="price__name"> Grid</p>
+                    <h3 class="price__price">$15.990/mes</h3>
+
+                <div class="price__items">
+                    <p class="price__features">Grid</p>
+                    <p class="price__features">Implicit Grid</p>
+                    <p class="price__features">Responsive</p>
+                </div>
+                <a href="#" class="price__cta"> Empieza Ahora</a>
+            </div>
+
+            <div class= "price__element"> 
+                <p class="price__name"> Animaciones</p>
+                    <h3 class="price__price">$23.990/mes</h3>
+                <div class="price__items">
+                    <p class="price__features">Animation</p>
+                    <p class="price__features">Transition</p>
+                    <p class="price__features">Render Website</p>
+                </div>
+                <a href="#" class="price__cta"> Empieza Ahora</a>
+            </div>
+        </div>
+    </section>
+    <section class="testimony">
+        <div class="testimony__container container">
+            <img src="./images/leftarrow.svg" class="testimony__arrow" id="before">
+
+            <section class="testimony__body testimony__body--show" data-id="1">
+                <div class="testimony__texts">
+                    <h2 class="subtitle">Mi nombre es Carolina Valenzuela, <span class="testimony__course">estudiante
+                            de CSS+HTML.</span></h2>
+                    <p class="testimony__review"> Empecé la carrera de Ingeniería Informática sin tener muy claro qué quería hacer. Antes de terminar el primer año, me di cuenta que habían muchas asignaturas que no terminaban de convencerme, pero las asignaturas de programación me gustaban bastante. De ahí empecé por mi cuenta a mirarme cosillas y me metí en el ciclo superior de Desarrollo de Aplicaciones Web, donde me di cuenta que quería programar, ya que me levantaba con ganas de ir a clase.</p>
+                </div>
+
+                <figure class="testimony__picture">
+                    <img src="./images/face1.jpg" class="testimony__img">
+                </figure>
+            </section>
+
+            <section class="testimony__body" data-id="2">
+                <div class="testimony__texts">
+                    <h2 class="subtitle">Mi nombre es Roberto Caroca, <span class="testimony__course">estudiante de
+                            CSS.</span></h2>
+                    <p class="testimony__review">Empecé la carrera de Ingeniería Informática sin tener muy claro qué quería hacer. Antes de terminar el primer año, me di cuenta que habían muchas asignaturas que no terminaban de convencerme, pero las asignaturas de programación me gustaban bastante. De ahí empecé por mi cuenta a mirarme cosillas y me metí en el ciclo superior de Desarrollo de Aplicaciones Web, donde me di cuenta que quería programar, ya que me levantaba con ganas de ir a clase.</p>
+                </div>
+
+                <figure class="testimony__picture">
+                    <img src="./images/face2.jpg" class="testimony__img">
+                </figure>
+            </section>
+
+            <section class="testimony__body" data-id="3">
+                <div class="testimony__texts">
+                    <h2 class="subtitle">Mi nombre es   Joao Gutierrez, <span class="testimony__course">estudiante de
+                            CSS.</span></h2>
+                    <p class="testimony__review">Empecé la carrera de Ingeniería Informática sin tener muy claro qué quería hacer. Antes de terminar el primer año, me di cuenta que habían muchas asignaturas que no terminaban de convencerme, pero las asignaturas de programación me gustaban bastante. De ahí empecé por mi cuenta a mirarme cosillas y me metí en el ciclo superior de Desarrollo de Aplicaciones Web, donde me di cuenta que quería programar, ya que me levantaba con ganas de ir a clase.</p>
+                </div>
+
+                <figure class="testimony__picture">
+                    <img src="./images/face3.jpg" class="testimony__img">
+                </figure>
+            </section>
+
+            <section class="testimony__body" data-id="4">
+                <div class="testimony__texts">
+                    <h2 class="subtitle">Mi nombre es Pablo Garrido, <span class="testimony__course">estudiante de
+                            CSS.</span></h2>
+                    <p class="testimony__review">Empecé la carrera de Ingeniería Informática sin tener muy claro qué quería hacer. Antes de terminar el primer año, me di cuenta que habían muchas asignaturas que no terminaban de convencerme, pero las asignaturas de programación me gustaban bastante. De ahí empecé por mi cuenta a mirarme cosillas y me metí en el ciclo superior de Desarrollo de Aplicaciones Web, donde me di cuenta que quería programar, ya que me levantaba con ganas de ir a clase.</p>
+                </div>
+
+                <figure class="testimony__picture">
+                    <img src="./images/face4.jpg" class="testimony__img">
+                </figure>
+            </section>
+
+            <img src="./images/rightarrow.svg" class="testimony__arrow" id="next">
+        </div>
+    </section>
+
+
+
+
+<section class="questions container">
+    <h2 class="subtitle">Preguntas frecuentes</h2>
+    <p class="questions__paragraph"> es muy dificil??</p>
+
+    <section class="questions__container">
+        <article class="questions__padding">
+            <div class="questions__answer">
+                <h3 class="questions__title">¿Qué es CSS?
+                    <span class="questions__arrow">
+                        <img src="./images/arrow.svg" class="questions__img">
+                    </span>
+                </h3>
+<p class="questions__show">
     
+    CSS son las siglas en inglés para «hojas de estilo en cascada» (Cascading Style Sheets). Básicamente, es un lenguaje que maneja el diseño y presentación de las páginas web, es decir, cómo lucen cuando un usuario las visita. Funciona junto con el lenguaje HTML que se encarga del contenido básico de las páginas.
+
+    Se les denomina hojas de estilo «en cascada» porque puedes tener varias hojas y una de ellas con las propiedades heredadas (o «en cascada») de otras.
     
+    Para muchas personas una simple plantilla de blog es suficiente. Aun así, cuando quieras personalizar la apariencia de un sitio necesitarás implementar CSS que, en conjunto con un buen CMS, te ayudará a potenciar el alcance de tu contenido.
+
+</p>
+</div>
+</article>
+<article class="questions__padding">
+    <div class="questions__answer">
+        <h3 class="questions__title">¿Qué aprenderé en este curso?
+            <span class="questions__arrow">
+                <img src="./images/arrow.svg" class="questions__img">
+            </span>
+        </h3>
+        <p class="questions__show"> ¿Que se aprende en CSS?
+            Las Hojas de estilo en cascada (del ingles Cascading Stylesheets CSS) es la siguiente tecnología que aprenderemos después de HTML. Mientras que HTML se utiliza para definir la estructura y la semántica del contenido, CSS se usa para darle estilo y posicionarlo visualmente..</p>
+    </div>
+</article>
+
+<article class="questions__padding">
+    <div class="questions__answer">
+        <h3 class="questions__title">¿Qué es CSS GRID?
+            <span class="questions__arrow">
+                <img src="./images/arrow.svg" class="questions__img">
+            </span>
+        </h3>
+    <p class="questions__show"> ¿Qué es el grid en CSS?
+        La declaración display: grid te proporciona una cuadrícula de una sola columna, por lo que tus elementos continúan mostrándose uno debajo del otro, como lo hacen en el flujo normal. Para ver algo que se parezca más a una cuadrícula, necesitamos añadir columnas a la cuadrícula.</p>
+        </div>
+</article>
+</section>
+
+<footer class="footer">
+    <section class="footer__container container">
+        <nav class="nav nav--footer">
+            <h2 class="footer__title">Curso de CSS.</h2>
+
+            <ul class="nav__link nav__link--footer">
+                <li class="nav__items">
+                    <a href="#" class="nav__links">Inicio de Pagina</a>
+                </li>
+                <li class="nav__items">
+                    <a href="#" class="nav__links">Acerca de...</a>
+                </li>
+                <li class="nav__items">
+                    <a href="#" class="nav__links">Contactanos</a>
+                </li>
+                <li class="nav__items">
+                    <a href="#" class="nav__links">Blog</a>
+                </li>
+            </ul>
+        </nav>
+
+        <form class="footer__form" action="" method="">
+            <h2 class="footer__newsletter">Suscribete!!!!</h2>
+            <div class="footer__inputs">
+                <input type="email" placeholder="Email:" class="footer__input" name="_replyto">
+                <input type="submit" value="Registrate" class="footer__submit">
+            </div>
+        </form>
+    </section>
+
+    <section class="footer__copy container">
+        <div class="footer__social">
+            <!--se aplicara las distintas fotos de redes sociales-->
+            <a href="#" class="footer__icons"><img src="./images/facebook.svg" class="footer__img"></a>
+            <a href="#" class="footer__icons"><img src="./images/twitter.svg" class="footer__img"></a>
+            <a href="#" class="footer__icons"><img src="./images/youtube.svg" class="footer__img"></a>
+        </div>
+
+   <h3 class="footer__copyright"> Derechos reservados por Hanz Caroca Valenzuela</h3>
+</section>
+</footer>
+    </main>
+    <!-- se enlaza la funcion slider-->
+    <script src="./js/slider.js" ></script>
+    <!-- se enlaza la funcion slider-->
+    <script src="./js/questions.js" ></script>
+    <!--se enlaza la funcion menu-->
+    <script src="./js/questions.js" ></script>
 </body>
 </html>
