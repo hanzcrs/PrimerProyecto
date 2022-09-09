@@ -141,7 +141,8 @@ en background-image: copiamos lo que arroja al momento de dar contorno a la imag
     width: 90%;
     margin: 0 auto;
     gap: 1em;
-    overflow: hidden; 
+    overflow: hidden;
+    background-color: #c6cdda; 
     grid-template-columns: repeat(auto-fit, minmax(260px, auto));  /*con esto se adecua a cada dispositvo */ 
 }
 
@@ -205,7 +206,7 @@ max-width: 500px;
 }
 
 .price__element{
-    background-color: #e5e5f7;
+    background-color: #dbc78f;
     text-align: center;
     border-radius: 10px;
     width: 330px;
